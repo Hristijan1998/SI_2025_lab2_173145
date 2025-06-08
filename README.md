@@ -30,7 +30,7 @@ Implemented using **JUnit** in the `SI_lab2Test` class.
 
 ### Control Flow Graph
 
-![CFG](cfg.png)
+![Control Flow Graph](CFG.png)
 
 ---
 
