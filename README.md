@@ -4,43 +4,45 @@
 
 ### Task Description
 
-- Write **unit tests** for the `checkCart` method in the `SI_lab2` class.
-- Draw the **Control Flow Graph (CFG)**.
-- Calculate the **Cyclomatic Complexity**.
-- Identify **independent paths**.
+This lab involves:
+
+- Writing unit tests for the `checkCart` method in the `SILab2` class.
+- Drawing the Control Flow Graph (CFG).
+- Calculating the Cyclomatic Complexity.
+- Identifying independent execution paths.
 
 ---
 
-### Unit Tests
+## Task 1: Unit Tests
 
-Implemented using **JUnit** in the `SI_lab2Test` class.
+Unit tests are written in the `SILab2Test.java` file using **JUnit**.  
+The tests cover the following scenarios:
 
----
-
-### Cyclomatic Complexity
-
-- **Cyclomatic Complexity (M)** = E - N + 2P
-- Where:
-  - E = number of edges
-  - N = number of nodes
-  - P = number of connected components (usually 1)
-- M = *[your calculation here]*
+- `allItems` is null → throws exception.
+- An item with null or empty name → throws exception.
+- An item with discount and high price triggers penalty and applies discount.
+- An item with no discount is added normally.
+- Valid and invalid credit card numbers.
 
 ---
 
-### Control Flow Graph
+## Task 2: Control Flow Graph
 
 ![Control Flow Graph](CFG.png)
 
 ---
 
-### Independent Paths
+## Task 3: Cyclomatic Complexity
 
-1. Path 1: `...`  
-2. Path 2: `...`  
-3. Path 3: `...`  
-4. Path 4: `...`
+- **Formula**:  
+  \[
+  V(G) = E - N + 2P = 22 - 18 + 2 = 6
+  \]
+
+- **Explanation**:  
+  The Cyclomatic Complexity is 6, which means there are 6 independent paths through the function. This value is based on:
+  - **18 nodes**
+  - **22 edges**
+  - **1 connected component (P = 1)**
 
 ---
-
-
