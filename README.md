@@ -46,3 +46,25 @@ The tests cover the following scenarios:
   - **1 connected component (P = 1)**
 
 ---
+
+
+## Task 4: Independent Paths
+
+1. Valid item with no discount, valid 16-digit numeric card → normal flow.
+2. `allItems == null` → throws "list can't be null" exception.
+3. An item has null or empty name → throws "Invalid item!" exception.
+4. An item has `price > 300`, `discount > 0`, or `quantity > 10` → penalty applied via `sum -= 30`.
+5. Item has `discount > 0` → discounted price is added.
+6. Invalid card number (not 16 digits or contains non-digits) → throws "Invalid card number" or "Invalid character" exception.
+
+---
+
+## Task 5: Multiple Condition Test Cases
+
+### Condition:
+```java
+if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
+
+## Notes
+
+- The CFG and complexity are based on the latest version of the `checkCart` method.
