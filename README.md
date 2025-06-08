@@ -1,36 +1,46 @@
-# SI_lab2_173145
+# Христијан Чаушоски - 173145
 
-**Name:** Христијан Чаушоски  
-**Index:** 173145  
+## Software Testing - Laboratory Exercise 2
 
-## Task 2: Control Flow Graph
+### Task Description
+
+- Write **unit tests** for the `checkCart` method in the `SI_lab2` class.
+- Draw the **Control Flow Graph (CFG)**.
+- Calculate the **Cyclomatic Complexity**.
+- Identify **independent paths**.
+
+---
+
+### Unit Tests
+
+Implemented using **JUnit** in the `SI_lab2Test` class.
+
+---
+
+### Cyclomatic Complexity
+
+- **Cyclomatic Complexity (M)** = E - N + 2P
+- Where:
+  - E = number of edges
+  - N = number of nodes
+  - P = number of connected components (usually 1)
+- M = *[your calculation here]*
+
+---
+
+### Control Flow Graph
+
 ![CFG](cfg.png)
 
-## Task 3: Cyclomatic Complexity
-- Formula: V(G) = E - N + 2P = 27 - 19 + 2 = 10
-- Explanation: The function has 10 independent paths, each representing a possible logical route through the function.
+---
 
-## Task 4: Every Statement Testing
-### Test Case:
-- Input: item1 ("Apple", 2, 150, 0.0), item2 ("Banana", 12, 310, 0.1), item3 ("Pear", 1, 100, 0.2)
-- Card Number: "1234567812345678"
-- Covers all statements: normal flow, discount and non-discount, penalty conditions.
+### Independent Paths
 
-## Task 5: Multiple Condition Testing
-### Condition:
-```java
-if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
-```
+1. Path 1: `...`  
+2. Path 2: `...`  
+3. Path 3: `...`  
+4. Path 4: `...`
 
-### Truth Table:
-| Price > 300 | Discount > 0 | Quantity > 10 | Result |
-|-------------|--------------|----------------|--------|
-| F           | F            | F              | F      |
-| T           | F            | F              | T      |
-| F           | T            | F              | T      |
-| F           | F            | T              | T      |
+---
 
-- Minimum test cases: 4 (one for each row)
 
-## Unit Tests
-- Implemented in `SILab2Test.java` using JUnit 5
